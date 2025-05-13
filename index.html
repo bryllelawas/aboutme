@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top shadow-sm coffee-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#about">☕ David Brylle Lawas</a>
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="container">
+    <!-- About Section -->
+    <section id="about" class="my-5">
+      <img src="images/brylle.jpeg" alt="Profile Picture" class="profile-img" />
+      <h2 class="section-title">About Me</h2>
+      <p class="text-center fs-5">
+        Hi, I'm David Brylle Lawas, a frontend-focused web developer passionate about crafting responsive and visually appealing user interfaces. I specialize in HTML, CSS, and JavaScript to bring digital designs to life.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="my-5">
+  <h2 class="section-title">Projects</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <!-- Project 1: HR Management UI -->
+    <div class="col">
+      <div class="card shadow-sm h-100">
+        <img src="images/hrmsui.png" class="card-img-top" alt="HR Management UI" />
+        <div class="card-body">
+          <h5 class="card-title">HR Management UI</h5>
+          <p class="card-text">
+            A clean and responsive user interface for an HR system using HTML, CSS, and Bootstrap. Designed to manage employee data, attendance, and basic payroll views.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Portfolio Website -->
+    <div class="col">
+      <div class="card shadow-sm h-100">
+        <img src="images/bryllefolio.PNG" class="card-img-top" alt="Portfolio Website" />
+        <div class="card-body">
+          <h5 class="card-title">Portfolio Website</h5>
+          <p class="card-text">
+            A modern personal portfolio site using HTML, CSS, and JavaScript. Showcases my projects, skills, and contact details with a mobile-first design and smooth user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Student Grading UI -->
+    <div class="col">
+      <div class="card shadow-sm h-100">
+        <img src="images/studentui.jpeg " class="card-img-top" alt="Grading System UI" />
+        <div class="card-body">
+          <h5 class="card-title">Student Grading UI</h5>
+          <p class="card-text">
+            Frontend interface for a grading system. Focused on layout, design, and usability to help instructors input and view student performance data easily.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="my-5">
+  <h2 class="section-title">Skills</h2>
+  <div class="row justify-content-center text-center g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="skill-tile shadow-sm rounded p-4">
+        <h5>HTML5 <i class="bi bi-braces"></i></h5>
+        <span class="skill-percent">98%</span>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="skill-tile shadow-sm rounded p-4">
+        <h5>CSS3 <i class="bi bi-palette"></i></h5>
+        <span class="skill-percent">95%</span>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="skill-tile shadow-sm rounded p-4">
+        <h5>JavaScript <i class="bi bi-code-slash"></i></h5>
+        <span class="skill-percent">85%</span>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="skill-tile shadow-sm rounded p-4">
+        <h5>PHP <i class="bi bi-filetype-php"></i></h5>
+        <span class="skill-percent">50%</span>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="skill-tile shadow-sm rounded p-4">
+        <h5>MySQL <i class="bi bi-database-fill"></i></h5>
+        <span class="skill-percent">45%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <style>
+      .skill-tile {
+  background-color: #fffaf3;
+  border: 2px solid #d6c4b0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tile h5 {
+  font-weight: 600;
+  color: #3e2c23;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.skill-percent {
+  display: inline-block;
+  background-color: #a97455;
+  color: #fffaf3;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-5">
+      <h2 class="section-title">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="email@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="messageInput" class="form-label">Message</label>
+              <textarea class="form-control" id="messageInput" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+          <div class="mt-4 contact-info text-center">
+            <p><i class="bi bi-envelope-fill"></i> david.lawas@example.com</p>
+            <p><i class="bi bi-telephone-fill"></i> 09786526272</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Lapu-Lapu City Cebu</p>
+            <p>
+              <i class="bi bi-github"></i>
+              <a href="https://github.com/davidlawas" target="_blank" rel="noopener" class="text-decoration-none">github.com/davidlawas</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 David Brylle Lawas. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+

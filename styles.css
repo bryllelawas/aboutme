@@ -1,0 +1,131 @@
+/* Custom Styles for a modern coffee theme */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3e9dc; /* light cream */
+  scroll-behavior: smooth;
+  color: #3e2c23; /* deep coffee text */
+  padding-top: 56px;
+  min-height: 100vh;
+}
+
+nav.navbar {
+  background: #d6c4b0; /* light mocha */
+}
+
+nav.navbar a.nav-link,
+nav.navbar-brand {
+  color: #3e2c23 !important; /* espresso */
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+nav.navbar a.nav-link:hover {
+  color: #6f4e37 !important; /* medium coffee */
+}
+
+section {
+  padding: 60px 15px 40px;
+}
+
+h2.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #6f4e37; /* dark roast */
+  letter-spacing: 0.1em;
+}
+
+/* Profile image */
+.profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  border: 5px solid #6f4e37;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Project cards */
+.card {
+  background-color: #fffaf3; /* light latte */
+  border: 1px solid #e0d3c0;
+}
+
+.card-title {
+  color: #4b3621; /* roasted brown */
+}
+
+.card-text {
+  color: #5a4534; /* mocha */
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Skills section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-badge {
+  background-color: #a97455; /* caramel */
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(169, 116, 85, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #8b5e3c; /* stronger coffee */
+  cursor: default;
+}
+
+/* Contact icons */
+.contact-info i {
+  font-size: 1.3rem;
+  color: #a97455;
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #3e2c23; /* espresso */
+  color: #f3e9dc; /* cream */
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 600px) {
+  section {
+    padding: 40px 10px 30px;
+  }
+  .card-img-top {
+    height: 140px;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+  }
+}
